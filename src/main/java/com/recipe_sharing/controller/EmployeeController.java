@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/employee")
+@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
+@RequestMapping("/api/employee")
 public class EmployeeController {
     @Autowired
     EmployeeService employeeService;
